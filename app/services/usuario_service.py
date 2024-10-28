@@ -1,7 +1,7 @@
 from models.usuario_model import Usuario
 from repositories.usuario_repositories import UsuarioRepository
 
-class usuarioService:
+class UsuarioService:
 
     def __init__(self, repository: UsuarioRepository):
         self.repository = repository 
@@ -17,10 +17,10 @@ class usuarioService:
 
                 self.repository.salvar_usuario(usuario)
                 print("Usuário cadastrado com sucesso!")
-            except TypeError as erro:
-                print(f"Erro ao salvar o usuario: {erro}")
-            except Exception as erro:
-                print(f"Ocorreu um erro inesperado: {erro}")
-            
-        def listar_todos_usuarios(self):
-            return self.repository.listar_usuario()
+        except TypeError as erro:
+            print(f"Erro ao salvar o usuario: {erro}")
+        except Exception as erro:
+            print(f"Ocorreu um erro inesperado: {erro}")
+        
+    def listar_todos_usuarios(self):
+        return self.repository.listar_usuarios()

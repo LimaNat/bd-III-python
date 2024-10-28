@@ -1,5 +1,5 @@
 from services.usuario_service import UsuarioService 
-from repositories.usuario_repository import UsuarioRepository
+from repositories.usuario_repositories import UsuarioRepository
 from config.database import Session
 
 def main():
@@ -20,5 +20,5 @@ def main():
     for usuario in listar_usuarios:
         print(f"Nome: {usuario.nome} - Email: {usuario.email} - Senha: {usuario.senha}")
 
-if __name__"__main__":
+if __name__== "__main__":
     main()
