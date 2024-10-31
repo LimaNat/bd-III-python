@@ -20,7 +20,7 @@ No arquivo principal, crie um menu onde o seja possivel escolher a ação deseja
  Informe a opção desejada:
  """
 
- Os dados precisan sser salvos no banco de dados.
+ Os dados precisan ser salvos no banco de dados.
 
  ### Tecnologias:
  - ORM: SQLAlchemy
